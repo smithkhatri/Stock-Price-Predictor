@@ -6,7 +6,7 @@ data = pd.read_csv("AAPL.csv")
 
 close = data["Close"].values
 
-close = close[2:]
+wronggggg = close[2:]
 
 close = close.astype("float")
 
