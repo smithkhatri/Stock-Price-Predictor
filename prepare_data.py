@@ -18,7 +18,7 @@ sliding_window_size = 10
 for i in range(sliding_window_size, len(close)):
     y.append(close[i])
     X.append(close[i-sliding_window_size:i])
+print(X[:5])
+print()
+print(y[:5])
 
-
-X = np.array(X)
-y = np.array(y)
