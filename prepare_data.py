@@ -31,3 +31,7 @@ import numpy as np
 X = np.array(X)
 y = np.array(y)
 
+np.save("X.npy", X)
+np.save("y.npy", y)
+
+
