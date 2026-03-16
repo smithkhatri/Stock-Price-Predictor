@@ -31,7 +31,17 @@ import numpy as np
 X = np.array(X)
 y = np.array(y)
 
-np.save("X.npy", X)
-np.save("y.npy", y)
+train_size = int(len(X) * 0.8)
 
+X_train = X[:train_size]
+X_test = X[train_size:]
+
+y_train = y[:train_size]
+y_test = y[train_size:]
+
+
+np.save("X_train.npy", X_train)
+np.save("X_test.npy", X_test)
+np.save("y_train.npy", y_train)
+np.save("y_test.npy", y_test)
 
