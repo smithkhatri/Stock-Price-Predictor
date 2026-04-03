@@ -52,7 +52,7 @@ for epoch in range(100):
         print("Epoch:", epoch, "Loss:", loss.item())
     
     
-    
+#----------------------------------
 model.eval()
 with torch.no_grad():
     last_window = X[-1]
@@ -76,6 +76,8 @@ prediction = np.array([[prediction]])
 real_price = scaler.inverse_transform(prediction)
 
 print("Predicted next price:", real_price[0][0])
+
+#---------------------------------
 
 model.eval()
 
